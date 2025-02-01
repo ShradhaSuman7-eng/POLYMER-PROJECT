@@ -1,0 +1,164 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:sans-serif;
+}
+body{
+  margin: 0;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px;
+}
+.shop{
+  font-size: 20px;
+  /* font-weight: bold; */
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 5px;
+  color: black;
+}
+.menu{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 30px;
+  padding: 20px;   
+}
+.cart-icon{
+  font-size: 20px;
+  padding: 20px;
+}
+.cartitem{
+  margin-top: 10px;
+}
+.checkout{
+  display: flex;
+  justify-content: center;
+}
+
+.personal-details{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.part1,.part2{
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  gap :20px;
+  text-align: start;
+
+}
+.data{
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  gap: 30px;
+  border: 0px solid ;
+  border-bottom: 1px solid;
+}
+.state-detail{
+  display: flex;
+  gap: 10px;
+
+}
+.country-section,.month-section {
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  margin: 5px 0;
+  border: 0px;
+  border-bottom: 1px solid #757575;
+}
+.month-year-cvv{
+  display: flex;
+}
+#hide{
+  display: none;
+}
+
+#hide-bill:checked ~ #hide{
+display: flex;
+flex-direction: column;
+}
+.checkout-total-price{
+  display: flex;
+  margin-top: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.placeoredr {
+  color: #fff;
+  font-size: 16px;
+  padding:20px 0px ;
+  width: 100%;
+  background-color: #172C50;
+  position:fixed;
+  bottom: 0;
+}
+.cartbtn{
+  display: none;
+}
+.person-details-heading{
+  display: flex;
+  justify-items: start;
+}
+.place-order{
+display: none;
+}
+.personal-details{
+  margin: 0px 5%;
+}
+.cartitem{
+  margin-left: 50rem;
+  color: gray;
+  font-size: 13px;
+}
+/* Media Queries */
+@media (min-width: 768px) {
+
+  .personal-details{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 0px 10%;
+      gap: 30px;
+  }
+
+  .menu i{
+      display: none;
+  }
+
+  .state-detail {
+      flex-direction: column;
+  }
+  .checkoutbtn {
+      display: none;
+  }
+  .place-order{
+    display: flex;
+    text-decoration: none;
+    color: #202020;
+    border:1px solid;
+    height: 40px;
+    width: 200px;
+    padding-top: 10px;
+    padding-left: 40px;
+
+  }
+
+  .footer-class{
+      display: flex;
+      margin-top:70px;
+      bottom: 0;
+      display: flex;
+      align-self: center;
+      justify-content: center;   
+  }
+}
